@@ -5,7 +5,11 @@ all:
     # Wazuh AIO node
 
     aio:
-      ansible_host: wazuh.localdomain
+      ansible_host: wazuh-aio.localdomain
+      indexer_admin_password: "h0melab!"
+      dashboard_user: homelab
+      dashboard_password: "h0melab!"
+      domain_name: homelab.greenthegarden.com
 
     # Wazuh agent VM nodes
     nexcloud:
@@ -74,5 +78,4 @@ wazuh_agent_nodes:
     portainer:
     uptimekuma:
     vaultwarden:
-    wazuh:
     whatsupdocker:

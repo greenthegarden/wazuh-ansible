@@ -5,7 +5,7 @@
       - role: ../roles/wazuh/wazuh-indexer
         perform_installation: false
     become: no
-    #become_user: root
+    become_user: root
     vars:
       indexer_node_master: true
       instances:
