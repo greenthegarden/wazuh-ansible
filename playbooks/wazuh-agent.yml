@@ -1,5 +1,5 @@
 ---
-- hosts: wazuh_agent_nodes
+- hosts: aio
   # become: yes
   # become_user: root
   roles:

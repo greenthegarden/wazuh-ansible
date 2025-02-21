@@ -12,5 +12,6 @@ Pipfile.lock
 molecule/**/es_certs/
 molecule/**/opendistro/
 
-indexer/*
-hosts.yml
+playbooks/indexer
+hosts.yaml
+
