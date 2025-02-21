@@ -11,6 +11,11 @@
 
 - block:
 
+  - name: Ensure OpenSSL is installed
+    package:
+      name: openssl
+      state: present
+
   - name: Local action | Create local temporary directory for certificates generation
     file:
       path: "{{ local_certs_path }}"

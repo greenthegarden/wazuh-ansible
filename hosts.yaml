@@ -1,0 +1,75 @@
+all:
+  
+  hosts:
+
+    # Wazuh AIO node
+
+    aio:
+      ansible_host: wazuh.localdomain
+
+    # Wazuh agent VM nodes
+    nexcloud:
+      ansible_host: nextcloud.localdomain
+    # Wazuh agent LXC nodes
+    ansible:
+      ansible_host: ansible.localdomain
+    authentik:
+      ansible_host: authentik.localdomain
+    broker:
+      ansible_host: broker.localdomain
+    dockercontainer:
+      ansible_host: dockercontainer.localdomain
+    fireflyiii:
+      ansible_host: fireflyiii.localdomain
+    frigate:
+      ansible_host: frigate.localdomain
+    grafana:
+      ansible_host: grafana.localdomain
+    grocy:
+      ansible_host: grocy.localdomain
+    homebox:
+      ansible_host: homebox.localdomain
+    homepage:
+      ansible_host: homepage.localdomain
+    hortusfox:
+      ansible_host: hortusfox.localdomain
+    influxdb:
+      ansible_host: influxdb.localdomain
+    portainer:
+      ansible_host: portainer.localdomain
+    uptimekuma:
+      ansible_host: uptimekuma.localdomain
+    vaultwarden:
+      ansible_host: vaultwarden.localdomain
+    whatsupdocker:
+      ansible_host: whatsupdocker.localdomain
+
+  vars:
+    ansible_connection: ssh
+    ansible_user: root
+
+wazuh_agent_nodes:
+
+  hosts:
+
+    # VM nodes
+    nexcloud:
+
+    # LXC nodes
+    ansible:
+    authentik:
+    broker:
+    dockercontainer:
+    fireflyiii:
+    frigate:
+    grafana:
+    grocy:
+    homebox:
+    homepage:
+    hortusfox:
+    influxdb:
+    portainer:
+    uptimekuma:
+    vaultwarden:
+    wazuh:
+    whatsupdocker:
